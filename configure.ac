@@ -3,16 +3,14 @@
 
 AC_PREREQ(2.59)
 
-AC_INIT([prolog],
-	m4_esyscmd([build-aux/git-version-gen --tags .tarball-version]),
-	[multimedia at maemo.org])
+AC_INIT([prolog], [1.2.2], [multimedia at maemo.org])
 
 AC_CONFIG_SRCDIR(src)
 AC_CONFIG_MACRO_DIR([m4])
 
 DOC_SUPPORT_INIT
 
-AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
+AM_INIT_AUTOMAKE
 AC_CONFIG_HEADER([src/config.h])
 
 AC_SUBST(ACLOCAL_AMFLAGS, "-I m4")
