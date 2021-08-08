@@ -1,0 +1,3 @@
+usr/include/prolog/*
+usr/lib/*/*.so
+usr/lib/*/pkgconfig/*.pc

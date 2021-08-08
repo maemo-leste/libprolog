@@ -1,0 +1,29 @@
+Source: libprolog
+Section: libs
+Priority: optional
+Maintainer: Merlijn Wajer <merlijn@wizzup.org>
+Build-Depends:
+ swi-prolog-nox,
+ debhelper-compat (= 12),
+ libtool,
+ libtool-bin,
+ autoconf,
+ autoconf-archive,
+ automake,
+ pkg-config,
+ check,
+Standards-Version: 4.3.0
+
+Package: libprolog
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: libprolog convenience library
+ The prolog convenience library contains a small set of functions that
+ are supposed to make embedding the SWI-Prolog interpreter easier.
+
+Package: libprolog-dev
+Architecture: any
+Depends:
+ libprolog (= ${binary:Version}),
+Description: libprolog development headers
+ This package contains development files for libprolog.
