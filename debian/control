@@ -12,6 +12,7 @@ Build-Depends:
  automake,
  pkg-config,
  check,
+ libglib2.0-dev,
 Standards-Version: 4.3.0
 
 Package: libprolog
